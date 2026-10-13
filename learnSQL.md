@@ -61,7 +61,7 @@ ORDER BY student.id, Enrollment.course;
 
 对于上面的两个表，这两种写法的输出没有任何区别，都是：
 
-<img src="include_pictures/image-20261013014737341.png" alt="image-20261013014737341" style="zoom:50%;" />
+<img src="https://raw.githubusercontent.com/yhua10/sql-Learning/main/include_pictures/image-20261013014737341.png" alt="image-20261013014737341" style="zoom:50%;" />
 
 但如果选课表中存在这样一行：
 
@@ -95,11 +95,11 @@ ORDER BY student.id;
 
 写法 1 输出：
 
-<img src="include_pictures/image-20261013020509182.png" alt="image-20261013020509182" style="zoom:50%;" />
+<img src="https://raw.githubusercontent.com/yhua10/sql-Learning/main/include_pictures/image-20261013020509182.png" alt="image-20261013020509182" style="zoom:50%;" />
 
 写法 2 输出：
 
-<img src="include_pictures/image-20261013020527113.png" alt="image-20261013020527113" style="zoom:50%;" />
+<img src="https://raw.githubusercontent.com/yhua10/sql-Learning/main/include_pictures/image-20261013020527113.png" alt="image-20261013020527113" style="zoom:50%;" />
 
 可见，ON 决定怎样匹配，WHERE 决定连接后的那些行留下。
 
@@ -134,10 +134,10 @@ GROUP BY Enrollment.student_id;
 
 写法 1 输出：
 
-<img src="include_pictures/image-20261013103922161.png" alt="image-20261013103922161" style="zoom:50%;" />
+<img src="https://raw.githubusercontent.com/yhua10/sql-Learning/main/include_pictures/image-20261013103922161.png" alt="image-20261013103922161" style="zoom:50%;" />
 
 写法 2 输出：
 
-<img src="include_pictures/image-20261013103949020.png" alt="image-20261013103949020" style="zoom:50%;" />
+<img src="https://raw.githubusercontent.com/yhua10/sql-Learning/main/include_pictures/image-20261013103949020.png" alt="image-20261013103949020" style="zoom:50%;" />
 
 因为外层的 `FROM` 决定从哪些记录出发。内层子查询只能为外层已有的行计算值，不会帮它增加学生。
