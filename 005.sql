@@ -21,4 +21,23 @@ SELECT id, name, age
 FROM Student
 WHERE name LIKE '张%';
 
+SELECT id, name, age
+FROM Student
+WHERE age > ALL (
+    SELECT age
+    FROM Student
+    WHERE name LIKE '张%'
+)
+
+
+
+
+
+
+
+
+
+
+
+
 
