@@ -36,6 +36,17 @@ WHERE NOT EXISTS(
     )
 );
 
+/* 自连接 */
+SELECT a.name AS name1, b.name AS name2, a.age
+FROM Student AS a
+JOIN Student AS b
+    ON a.age = b.age
+    AND a.id < b.id;
+
+
+
+
+
 
 
 
